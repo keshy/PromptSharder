@@ -1,0 +1,17 @@
+image: python:3.8
+
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - pip install pytest pytest-cov
+    - pytest --cov=./ --cov-report=xml
+    - pip install -r requirements.txt
+    - pytest
+  artifacts:
+    reports:
+      junit: report.xml
+    paths:
+      - htmlcov/

@@ -14,10 +14,9 @@ def get_token_size(text: str) -> int:
 
 def get_chunk_limit_for_mapper(document_length: int, query_len: int, max_token_limit: int) -> (int, int):
     if document_length + query_len < max_token_limit:
-        return ((document_length + query_len) ** 2), 1
+        return (document_length + query_len), 1
     else:
         chunking_pool = max_token_limit - query_len
         num_chunks = int(document_length / chunking_pool) + 1
         chunk_size = int(document_length / num_chunks) + query_len
-        # chunk_size here is token size - so we reverse convert to character size
-        return chunk_size ** 2, num_chunks
+        return chunk_size, num_chunks
