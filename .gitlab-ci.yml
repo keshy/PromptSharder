@@ -8,10 +8,10 @@ test:
   script:
     - pip install -r requirements.txt
     - pip install pytest pytest-cov
-    - pytest --cov=./ --cov-report=xml
+    - pytest --cov=./ --cov-report=html
     - pytest
   artifacts:
     reports:
       junit: coverage.xml
     paths:
-      - ./
+      - ./*.html
