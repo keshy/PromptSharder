@@ -168,5 +168,5 @@ if __name__ == '__main__':
 
     args = args.parse_args()
     processor = LongDocProcessor(args)
-    processor.process(debug=True)
+    processor.process()
     logger.info(f'Job {processor.job_id} is complete...')
