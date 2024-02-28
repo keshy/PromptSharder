@@ -14,4 +14,4 @@ test:
     reports:
       junit: coverage.xml
     paths:
-      - ./*.html
+      - htmlcov/
