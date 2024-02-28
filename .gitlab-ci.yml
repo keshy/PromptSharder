@@ -12,6 +12,6 @@ test:
     - pytest
   artifacts:
     reports:
-      junit: report.xml
+      junit: coverage.xml
     paths:
-      - htmlcov/
+      - ./
