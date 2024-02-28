@@ -1,0 +1,9 @@
+chromadb
+openai
+tiktoken
+langchain
+langchain-openai
+jq
+streamlit
+pymongo
+pytest

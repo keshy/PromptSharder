@@ -1,0 +1,11 @@
+---
+
+prompt_template: Include prompt that'd be applied across chunks of the given set of documents
+map_reduce_method: parallel or sequential
+max_token_limit: depending on model max token limit
+step_delay_in_seconds: 5
+reducer_template: A reduction template if required to guide what needs to be done on top of intermediate results.
+prompt_template_var: variable name indicated in the prompt_template that'd be used as placeholder for referencing document chunks.
+reducer_template_var: variable name used in reducer_template that'd be used as a placeholder for referencing intermediate results that need merging.
+
+
