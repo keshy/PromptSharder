@@ -1,3 +1,6 @@
+# Copyright [2024] Krishnan Narayan
+#
+# Licensed under CC BY-SA 4.0 (see LICENSE file)
 import argparse
 import json
 import os
